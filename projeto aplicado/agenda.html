@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Simples</title>
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="GUIagenda.css">
+        <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <div class="container">
+    <div>
+        <header class="titulo">
+            <p id="titulo">Agenda Médica</p>
+        </header>
+    </div>
+
+        <div class="calendar-controls">
+            <button onclick="changeMonth(-1)">&#8249;</button>
+            <span id="month-year"></span>
+            <button onclick="changeMonth(1)">&#8250;</button>
+        </div>
+
+        <div class="calendar" id="calendar"></div>
+
+        <div class="add-event-form">
+            <h2>Adicionar Evento</h2>
+            <input type="date" id="event-date" placeholder="Escolha uma data">
+            <input type="text" id="event-description" placeholder="Descrição do evento">
+            <button onclick="addEvent()">Marcar Compromisso</button>
+        </div>
+    </div>
+
+    <script src="agendacalendario.js"></script>
+
+</body>
+</html>
